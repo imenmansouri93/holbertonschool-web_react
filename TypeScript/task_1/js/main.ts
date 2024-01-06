@@ -28,3 +28,16 @@ const director: Directors = {
     location: 'Los Angeles',
     numberOfReports: 10,
   };
+
+interface printTeacherFunction {
+    (firstName: string, lastName: string): string;
+}
+
+export const printTeacher: printTeacherFunction = function (
+    firstName: string, 
+    lastName: string
+): string {
+    return `${firstName.charAt(0)}. ${lastName}`;
+};
+
+console.log("imen", "mansouri")
